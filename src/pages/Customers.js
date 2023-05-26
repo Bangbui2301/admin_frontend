@@ -6,25 +6,35 @@ const columns = [
     dataIndex: "key",
   },
   {
-    title: "Họ và tên",
-    dataIndex: "name",
+    title: "Họ",
+    dataIndex: "first_name",
   },
   {
-    title: "Sản phẩm",
-    dataIndex: "product",
+    title: "Tên",
+    dataIndex: "last_name",
   },
   {
-    title: "Trạng thái",
-    dataIndex: "status",
+    title: "Giới tính",
+    dataIndex: "sex",
+  },
+  {
+    title: "Ngày sinh",
+    dataIndex: "birthday",
+  },
+  {
+    title: "Hành động",
+    dataIndex: "action",
   },
 ];
 const ord_data = [];
 for (let i = 0; i < 46; i++) {
   ord_data.push({
     key: i,
-    name: `Edward King ${i}`,
-    product: 32,
-    status: `London, Park Lane no. ${i}`,
+    first_name: `Edward`,
+    last_name: `King ${i}`,
+    sex: `Nam`,
+    birthday: `20/03/2003`,
+    action: "xoá, sửa",
   });
 }
 
